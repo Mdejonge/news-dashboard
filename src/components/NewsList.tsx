@@ -13,7 +13,7 @@ export const NewsList = async ({ newsItems }: any) => {
               <a
                 key={item.title}
                 href={item.link}
-                className="flex flex-col gap-y-4 relative group"
+                className="flex flex-col gap-y-4 relative group col-span-4 sm:col-span-2 md:col-span-1"
                 target="_blank"
               >
                 <Image
