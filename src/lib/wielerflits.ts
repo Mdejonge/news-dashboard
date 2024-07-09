@@ -1,6 +1,7 @@
 import axios from "axios";
 var parseString = require("xml2js").parseString;
 
+export const dynamic = "force-dynamic";
 export const getWielerflitsFeed = async () => {
   const response = await axios.get("https://wielerflits.nl/feed", {
     headers: {

@@ -1,6 +1,8 @@
 import axios from "axios";
 var parseString = require("xml2js").parseString;
 
+export const dynamic = "force-dynamic";
+
 export const getGPBlogFeed = async () => {
   const response = await axios.get("https://www.gpblog.com/nl/rss/index.xml", {
     headers: {
